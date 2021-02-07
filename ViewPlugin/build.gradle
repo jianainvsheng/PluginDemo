@@ -1,0 +1,47 @@
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+ext {
+    version = "1.1.8"
+    artifactId = "view"
+    groupId = "com.source.plugin"
+    packaging = "aar"
+}
+
+apply from: project.uri('maven.gradle')
+
+ext.dependencie =[
+        FileTree: fileTree(include: ['*.jar'], dir: 'libs'),
+        fastjson: 'com.alibaba:fastjson:1.2.33',
+        commons_io: 'commons-io:commons-io:2.4',
+        commons_lang: 'commons-lang:commons-lang:2.6',
+        commons_beanutils: 'commons-beanutils:commons-beanutils:1.9.3',
+        javassist: 'org.javassist:javassist:3.21.0-GA',
+        build: 'com.android.tools.build:gradle:3.0.0',
+        kernel: 'com.source.plugin:kernel:1.3.6',
+        viewannotation : "com.source.annotation:annotation:1.1.0",
+]
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation dependencie.FileTree
+    implementation dependencie.fastjson
+    implementation dependencie.commons_io
+    implementation dependencie.commons_lang
+    implementation dependencie.commons_beanutils
+    implementation dependencie.javassist
+    implementation dependencie.build
+    implementation dependencie.kernel
+    implementation dependencie.viewannotation
+}
+repositories {
+    google()
+    jcenter()
+    maven {
+        credentials {
+            username MAVEN_USERNAME
+            password MAVEN_PASSWORD
+        }
+        url MAVEN_URL
+    }
+}

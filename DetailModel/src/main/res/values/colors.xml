@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 客户端焦点和选中态色值 -->
+    <color name="local_common_focus_background_start_color">@color/color_37b133</color>
+    <color name="local_common_focus_background_end_color">#1DAC64</color>
+    <color name="local_common_focus_bg_start_color_new">#1DB847</color>
+    <color name="local_common_focus_bg_end_color_new">#1CAD8B</color>
+    <color name="local_common_tab_bar_decorated_line_background_color">#801CAD8B</color>
+    <color name="local_common_global_dialog_background_start_color">#28dcc1</color>
+    <color name="local_common_global_dialog_background_end_color">#2ea72d</color>
+    <color name="local_common_select_text_color">@color/color_3FC462</color>
+    <color name="uk_cirtitle_title_fs_ft_cor">@color/local_common_select_text_color</color>
+    <color name="local_pick_mode_dialog_bg_start_color">#27B133</color>
+    <color name="local_pick_mode_dialog_bg_end_color">#7CE238</color>
+    <color name="player_ui_carousel_item_channel_selected">#09d100</color>
+    <color name="uk_ripple_cor">#00FFC3</color><!--波纹动效，波纹颜色-->
+    <!-- seek bar -->
+    <color name="timed_seek_bar_progress_color">#1CAD8B</color>
+    <color name="timed_seek_bar_middle_color">#FF10c607</color>
+    <color name="timed_seek_bar_thumb_color">#1DB847</color>
+    <color name="timed_seek_bar_just_look_background_color">#331DEA16</color>
+    <color name="timed_seek_bar_just_look_left_color">@color/local_common_select_text_color</color>
+
+    <color name="micro_seek_bar_progress_color">#1CAD8B</color>
+    <color name="micro_seek_bar_thumb_color">#1DB847</color>
+
+    <color name="skin_record_progress_start">#1CAD8B</color>
+    <color name="skin_record_progress_end">#1DB847</color>
+
+    <color name="color_search_result_star_image_overlay">@color/color_37b133</color>
+
+    <color name="color_37b133">#37b133</color>
+    <color name="color_1dea16">#1dea16</color>
+    <color name="color_1b9f00">#1b9f00</color>
+    <color name="color_3FC462">#3FC462</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+
+    <color name="time_line_text_color_selected">#3FC462</color>
+    <color name="share_has_result_login_bg_focus_start">#B3008682</color>
+    <color name="share_has_result_login_bg_focus_end">#B300717D</color>
+    <color name="detail_text_color_focused">#FFF8F8F8</color>
+    <color name="detail_text_color_default_new">#99FFFFFF</color>
+    <color name="detail_activity_rank_start_color">#E65825</color>
+    <color name="detail_activity_rank_end_color">#E63532</color>
+    <color name="detail_activity_rank_start_color_two">#FFA657</color>
+    <color name="detail_activity_rank_end_color_two">#FF6257</color>
+    <color name="detail_activity_rank_start_color_three">#FFB13C</color>
+    <color name="detail_activity_rank_end_color_three">#FF7B3C</color>
+    <color name="detail_activity_rank_start_color_other">#E4E4E4</color>
+    <color name="detail_activity_rank_end_color_other">#B2B2B2</color>
+</resources>

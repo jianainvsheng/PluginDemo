@@ -1,0 +1,7 @@
+include ':ViewCompiler'
+include ':ViewAnnotation'
+include ':ViewPlugin'
+include ':DetailModel'
+include ':Share'
+include ':app'
+rootProject.name = "PluginDemo"

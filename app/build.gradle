@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: "com.plugin.router"
+routerExt {
+    routerPath "com/source","com/example"
+    isLog true
+
+}
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.plugindemo"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+
+}
+dependencies {
+    implementation dependencie.FileTree
+    implementation dependencie.AppCompat
+    implementation dependencie.Support
+    implementation dependencie.Constraint
+    implementation dependencie.share
+    implementation dependencie.detail
+    implementation dependencie.multidex
+    implementation dependencie.viewcompiler
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    >
+    <com.example.detailmodel.widget.snow.SnowView
+        android:id="@+id/activity_home_special_snow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        />
+    <RelativeLayout
+        android:id="@+id/activity_detail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_below="@+id/activity_detail_top_layout"
+        />
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_detail_top_layout"
+        layout="@layout/activity_detail_top_layout"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        />
+</RelativeLayout>

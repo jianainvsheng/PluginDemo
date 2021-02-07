@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DetailGradientTextView">
+        <attr name="startColor"  format="color"/>
+        <attr name="endColor"  format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FireworkView">
+        <attr name="texture" format="integer"/>
+        <attr name="plistFile" format="integer"/>
+        <attr name="backgroundImage" format="reference"/>
+    </declare-styleable>
+</resources>
